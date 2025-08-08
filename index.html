@@ -1,76 +1,90 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head> 
-	<meta charset="UTF-8"> 
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0"> 
-	<title>My Portfolio</title> 
-	<link rel="stylesheet"
-		href= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-		integrity= 
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-			crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-	<link rel="stylesheet" href="style.css"> 
-	<link rel="stylesheet" href="responsive.css"> 
-</head> 
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<body> 
-	<!-- Navbar header section -->
-	<header class="header"> 
-		<nav class="navbar"> 
-			<div class="logo"> 
-				<h2 class="logo-heading">Diwakar Lamichhane</h2> 
-			</div> 
-			<div class="hamburger" id="hamburger"> 
-				<i class="fas fa-bars hamburger-icon"></i> 
-				<i class="fas fa-times cross-icon"></i> 
-			</div> 
-			<div class="menu"> 
-				<ul class="menu-list"> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#home"> 
-							Home 
-						</a> 
-					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#portfolio"> 
-							Portfolio 
-						</a> 
-					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#about"> 
-							About
-						</a> 
-					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#services"> 
-							Services
-						</a> 
-					</li> 
-					<li class="menu-list-items"> 
-						<a class="links" href="#contact"> 
-							Contact Me 
-						</a> 
-					</li> 
-				</ul> 
-			</div> 
-		</nav> 
-	</header> 
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-	<!-- Main hero banner -->
-	<section id="home" class="hero"> 
-		<div class="intro"> 
-			<div class="headings"> 
-				<h3 class="greet-heading">Hello, I'm</h3> 
-				<h1 class="my-heading">Diwakar Lamichhane</h1> 
-				<h4 class="sub-heading"> 
-					A College Student. 
-				</h4> 
-			</div> 
-			
-		</div> 
-	</section> 
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Diwakar Lamichhane</a>
+                </div>
 
-	
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Diwakar Lamichhane</span><br> IT Student</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                
+                    
+                    <div>
+                        
+                        <p class="about__text">Hi, I'm Diwakar Lamichhane, an IT student with a growing passion for Artificial Intelligence and its real-world applications. I'm currently building my skills in programming, data, and intelligent systems as I explore how AI can shape the future.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+           
+
+           
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Diwakar Lamichhane</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
